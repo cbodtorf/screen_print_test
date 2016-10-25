@@ -1,3 +1,5 @@
+(function(){
+
 window.addEventListener('load', function(){
   app.init();
 })
@@ -14,7 +16,6 @@ var app = {
     var sandwichLayersRange = document.querySelector('.sandwich-layers')
     var imgLayerWrappers = document.querySelectorAll('.img-wrapper:not(:first-of-type)')
     var imgLayers = document.querySelectorAll('.img-wrapper img')
-    var rotateLayersRange = document.querySelector('.rotate-layers')
 
 
     sandwichLayersRange.addEventListener('input', function(){
@@ -32,15 +33,8 @@ var app = {
       })
     })
 
-    // rotateLayersRange.addEventListener('input', function(){
-    //   console.log(rotateLayersRange.value);
-    //
-    //   imgLayers.forEach(function(e){
-    //     console.log("tranform", e.style.transform);
-    //     e.style.transform = "rotate3d(0,1,0," + rotateLayersRange.value + "deg)"
-    //   })
-    // })
-
   }
 
 }
+
+})();

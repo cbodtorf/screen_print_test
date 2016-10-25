@@ -1,0 +1,23 @@
+body {
+  display: inline-flex;
+  margin-top: 50px;
+
+}
+
+input {
+  display: block;
+}
+
+.img-wrapper {
+  width: 100px;
+}
+
+.img-wrapper:not(:first-of-type) {
+  margin-left: -30px;
+}
+
+.img-wrapper img {
+  width: 300px;
+  transform: rotate3d(-0.2,1,-0.1,60deg);
+  border: 3px solid lightgray;
+}
